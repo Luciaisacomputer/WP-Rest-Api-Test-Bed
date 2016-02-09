@@ -32,7 +32,7 @@
 	 var $restContentBtn = $('.load-rest-content');
 	 var $restRequestStringInput = $('#rest-request-string');
 
-	 $('.load-rest-content').on('click',function(){
+	 $restContentBtn.on('click',function(){
  		 //Thanks Rachel Baker for giving me a starting point!
 		var apiEndpointData = $(this).attr('href'), 
 		$el = $( '#js-data' ), 
