@@ -5,11 +5,11 @@
  *
  * This file is used to markup the public-facing aspects of the plugin.
  *
- * @link       http://example.com
+ * @link       http://lukepettway.name
  * @since      1.0.0
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/public/partials
+ * @package    Wp_Rest_Api_Test_Bed
+ * @subpackage Wp_Rest_Api_Test_Bed/public/partials
  */
 ?>
 

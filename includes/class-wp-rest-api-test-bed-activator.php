@@ -3,11 +3,11 @@
 /**
  * Fired during plugin activation
  *
- * @link       http://example.com
+ * @link       http://lukepettway.name
  * @since      1.0.0
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
+ * @package    Wp_Rest_Api_Test_Bed
+ * @subpackage Wp_Rest_Api_Test_Bed/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
- * @author     Your Name <email@example.com>
+ * @package    Wp_Rest_Api_Test_Bed
+ * @subpackage Wp_Rest_Api_Test_Bed/includes
+ * @author     Luke Pettway <luke.pettway@gmail.com>
  */
-class Plugin_Name_Activator {
+class Wp_Rest_Api_Test_Bed_Activator {
 
 	/**
 	 * Short Description. (use period)

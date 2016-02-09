@@ -19,10 +19,10 @@
  * For more information, see the following discussion:
  * https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate/pull/123#issuecomment-28541913
  *
- * @link       http://example.com
+ * @link       http://lukepettway.name
  * @since      1.0.0
  *
- * @package    Plugin_Name
+ * @package    Wp_Rest_Api_Test_Bed
  */
 
 // If uninstall not called from WordPress, then exit.
