@@ -17,3 +17,5 @@
 <h2>WP Rest API Test Bed</h2>
 
 <p>Use the controls below to choose request parameters and display the output.</p>
+
+<div id="#js-data"></div>

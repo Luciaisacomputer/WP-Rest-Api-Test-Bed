@@ -29,4 +29,24 @@
 	 * practising this, we should strive to set a better example in our own work.
 	 */
 
+
+	 //Thanks Rachel Baker!
+ 	( function( $ , _ ){
+		var apiUrl = $( 'link[rel="https://github.com/WP-API/WP-API"]' ).attr( 'href'),
+	 		$el = $( '#js-data' ),
+	 		tmpl = '<article id="post-<%= id %>"><h1<%= title &></h1><%= content %></article>';
+
+	 	$.get( '/wp-json/wp/v2/pages/', function( data ) {
+	 		for ( var key in data ) {
+	 			var output = {
+	 				id : data[ key ].id,
+	 				title : data[ key ].title.rendered,
+	 				content : data[ key ].content.rendered,
+	 				},
+	 				$template = $( _.template( tmpl, output ) );
+ 				$el.append ( $template );
+	 		}
+	 	});
+	})( jQuery, _);
+
 })( jQuery );
