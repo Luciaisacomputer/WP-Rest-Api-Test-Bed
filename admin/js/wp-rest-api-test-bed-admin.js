@@ -1,4 +1,4 @@
-(function( $ ) {
+(function( $ , _ ) {
 	'use strict';
 
 	/**
@@ -31,22 +31,24 @@
 
 
 	 //Thanks Rachel Baker!
- 	( function( $ , _ ){
-		var apiUrl = $( 'link[rel="https://github.com/WP-API/WP-API"]' ).attr( 'href'),
-	 		$el = $( '#js-data' ),
-	 		tmpl = '<article id="post-<%= id %>"><h1<%= title &></h1><%= content %></article>';
+		var apiUrl = $( 'link[rel="https://github.com/WP-API/WP-API"]' ).attr( 'href'), 
+			$el = $( '#js-data' ), 
+			tmpl = '<article id="post-<%= id %>"><h1<%= title %>></h1><%= content %></article>';
 
-	 	$.get( '/wp-json/wp/v2/pages/', function( data ) {
+	 	$.get('/wp-json/wp/v2/pages/', function( data ) {
 	 		for ( var key in data ) {
 	 			var output = {
 	 				id : data[ key ].id,
 	 				title : data[ key ].title.rendered,
 	 				content : data[ key ].content.rendered,
 	 				},
-	 				$template = $( _.template( tmpl, output ) );
- 				$el.append ( $template );
+	 				$template = $( _.template( tmpl , output ) );
+ 					$el.append( $template );
+ 					//console.log($el );
 	 		}
-	 	});
-	})( jQuery, _);
 
-})( jQuery );
+	 	});
+
+
+
+})( jQuery , _ );

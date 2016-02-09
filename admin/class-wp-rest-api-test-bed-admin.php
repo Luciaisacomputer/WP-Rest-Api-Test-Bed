@@ -96,7 +96,7 @@ class Wp_Rest_Api_Test_Bed_Admin {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wp-rest-api-test-bed-admin.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wp-rest-api-test-bed-admin.js', array( 'jquery' , 'underscore'), $this->version, true );
 
 	}
 
