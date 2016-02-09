@@ -12,9 +12,7 @@ Test out the WordPress Rest API on your own site. No JS or Ajax knowledge requir
 
 == Description ==
 
-My goal with this plugin is to provide a simple way for anyone to see how the endpoints in the Rest API work on their
-own website. There will be a simple GUI that you can use to pull your content and display the JSON data, while also 
-giving you a small tutorial on how to modify the requests to get specific information. 
+My goal with this plugin is to provide a simple way for anyone to see how the endpoints in the Rest API work on their own website. There will be a simple GUI that you can use to pull your content and display the JSON data, while also giving you a small tutorial on how to modify the requests to get specific information. 
 
 
 == Installation ==
