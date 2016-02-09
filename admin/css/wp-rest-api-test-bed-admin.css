@@ -9,7 +9,7 @@
  	padding: 5px;
  }
 
- #rest-request-string{
+ .rest-request-string-container{
  	display: block;
  	margin-bottom: 15px;
  }

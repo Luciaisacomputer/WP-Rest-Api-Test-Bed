@@ -52,6 +52,7 @@
  				$restRequestStringInput.empty();
  				$restRequestStringInput.val( '/wp-json/wp/v2/' + apiEndpointData ) ;
 				$responseContainerFormated.append( $template );
+				$viewRequestEndpoint.attr(href,)
 	 		}
 
 	 		var dataString = JSON.stringify(data);
