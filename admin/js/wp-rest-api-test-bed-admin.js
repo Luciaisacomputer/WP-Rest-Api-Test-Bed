@@ -35,6 +35,7 @@
 	 $restContentBtn.on('click',function(){
  		 //Thanks Rachel Baker for giving me a starting point!
 		var apiEndpointData = $(this).attr('href'), 
+
 		$el = $( '#js-data' ), 
 		tmpl = '<article id="post-<%= id %>"><h1><%= title %></h1><%= content %></article>';
 

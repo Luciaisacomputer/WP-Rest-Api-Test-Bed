@@ -16,10 +16,10 @@ My goal with this plugin is to provide a simple way for anyone to see how the en
 
 
 == Installation ==
-
-1. Upload the `wp-rest-api-test-bed` folder to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Go to Settings and then WP Rest API Test Bed
+1. You'll need V2 of the WP REST API which is here: https://wordpress.org/plugins/rest-api/
+2. Upload the `wp-rest-api-test-bed` folder to the `/wp-content/plugins/` directory
+3. Activate the plugin through the 'Plugins' menu in WordPress
+4. Go to Settings and then WP Rest API Test Bed
 
 == Frequently Asked Questions ==
 
