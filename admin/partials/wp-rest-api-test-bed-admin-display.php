@@ -14,3 +14,6 @@
 ?>
 
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
+<h2>WP Rest API Test Bed</h2>
+
+<p>Use the controls below to choose request parameters and display the output.</p>
