@@ -18,4 +18,14 @@
 
 <p>Use the controls below to choose request parameters and display the output.</p>
 
+<input id="rest-request-string">
+
+<a class="load-rest-content button" href="pages">Pages</a>
+
+<a class="load-rest-content button" href="posts">Posts</a>
+
+<!-- <a class="load-rest-content button" href="comments">Comments</a> -->
+
+<!-- <a class="load-rest-content button" href="#">Custom Post Types</a> -->
+
 <div id="js-data"></div>

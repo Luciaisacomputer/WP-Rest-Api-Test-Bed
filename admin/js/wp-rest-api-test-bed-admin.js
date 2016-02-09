@@ -29,13 +29,17 @@
 	 * practising this, we should strive to set a better example in our own work.
 	 */
 
+	 var $restContentBtn = $('.load-rest-content');
+	 var $restRequestStringInput = $('#rest-request-string');
 
-	 //Thanks Rachel Baker!
-		var apiUrl = $( 'link[rel="https://github.com/WP-API/WP-API"]' ).attr( 'href'), 
-			$el = $( '#js-data' ), 
-			tmpl = '<article id="post-<%= id %>"><h1<%= title %>></h1><%= content %></article>';
+	 $('.load-rest-content').on('click',function(){
+ 		 //Thanks Rachel Baker!
+		//var apiEndpointData = $( 'link[rel="https://github.com/WP-API/WP-API"]' ).attr( 'href'), 
+		var apiEndpointData = $(this).attr('href'), 
+		$el = $( '#js-data' ), 
+		tmpl = '<article id="post-<%= id %>"><h1><%= title %></h1><%= content %></article>';
 
-	 	$.get('/wp-json/wp/v2/pages/', function( data ) {
+	 	$.get( '/wp-json/wp/v2/' + apiEndpointData , function( data ) {
 	 		for ( var key in data ) {
 	 			var output = {
 	 				id : data[ key ].id,
@@ -43,12 +47,14 @@
 	 				content : data[ key ].content.rendered,
 	 				},
 	 				$template = $( _.template( tmpl , output ) );
- 					$el.append( $template );
- 					//console.log($el );
+	 				$el.empty();
+	 				$restRequestStringInput.empty();
+	 				$restRequestStringInput.val('/wp-json/wp/v2/' + apiEndpointData);
+					$el.append( $template );
 	 		}
-
 	 	});
 
-
+	 	return false;
+	 });
 
 })( jQuery , _ );

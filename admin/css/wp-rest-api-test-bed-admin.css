@@ -2,3 +2,14 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+
+ #js-data{
+ 	margin: 15px 0 0 0;
+ 	background: #E0E0E0;
+ 	padding: 5px;
+ }
+
+ #rest-request-string{
+ 	display: block;
+ 	margin-bottom: 15px;
+ }
