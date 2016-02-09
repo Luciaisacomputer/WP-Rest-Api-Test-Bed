@@ -10,18 +10,18 @@
  *
  * @link              http://example.com
  * @since             1.0.0
- * @package           Plugin_Name
+ * @package           Wp_Rest_Api_Test_Bed
  *
  * @wordpress-plugin
- * Plugin Name:       WordPress Plugin Boilerplate
- * Plugin URI:        http://example.com/plugin-name-uri/
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Plugin Name:       WP Rest API Test Bed
+ * Plugin URI:        https://github.com/LukePettway/WP-Rest-Api-Test-Bed
+ * Description:       Test out the Rest API Endpoints on  your own blog, no JS or Ajax knowledge required. 
  * Version:           1.0.0
- * Author:            Your Name or Your Company
- * Author URI:        http://example.com/
+ * Author:            Luke Pettway
+ * Author URI:        http://lukepettway.name/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       plugin-name
+ * Text Domain:       wp-rest-api-test-bed
  * Domain Path:       /languages
  */
 
