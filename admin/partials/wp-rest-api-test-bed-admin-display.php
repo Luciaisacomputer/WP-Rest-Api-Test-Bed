@@ -30,5 +30,5 @@
 
 <div id="js-data-formated"></div>
 
-<p>Below is the JSON output by the request (note that HTML in the rendered content is being stripped out by the plugin)</p>
+<p>Below is the JSON output by the request (note that HTML in the rendered content is being stripped out by the plugin):</p>
 <div id="js-data-json"></div>

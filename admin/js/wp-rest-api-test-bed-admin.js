@@ -29,10 +29,10 @@
 	 * practising this, we should strive to set a better example in our own work.
 	 */
 
-	 var $restContentBtn = $('.load-rest-content');
-	 var $restRequestStringInput = $('#rest-request-string');
+	 var $restContentBtn = $( '.load-rest-content' );
+	 var $restRequestStringInput = $( '#rest-request-string' );
 
-	 $restContentBtn.on('click',function(){
+	 $restContentBtn.on( 'click', function(){
  		 //Thanks Rachel Baker for giving me a starting point!
 		var apiEndpointData = $(this).attr('href'), 
 
@@ -48,13 +48,15 @@
 	 				content : data[ key ].content.rendered,
 	 				},
 	 				$template = $( _.template( tmpl , output ) );
-	 				$responseContainerFormated.empty();
-	 				$restRequestStringInput.empty();
-	 				$restRequestStringInput.val('/wp-json/wp/v2/' + apiEndpointData);
-					$responseContainerFormated.append( $template );
+ 				$responseContainerFormated.empty();
+ 				$restRequestStringInput.empty();
+ 				$restRequestStringInput.val( '/wp-json/wp/v2/' + apiEndpointData ) ;
+				$responseContainerFormated.append( $template );
 	 		}
+
 	 		var dataString = JSON.stringify(data);
 
+	 		//strip out html from rendered content until I have a better solution
 	 		dataString = dataString.replace(/<\/?([a-z][a-z0-9]*)\b[^>]*>/gi, '');
 
 	 		$responseContainerJSON.append( dataString );
