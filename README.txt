@@ -1,5 +1,5 @@
 === WP Rest API Test Bed ===
-Contributors: (this should be a list of wordpress.org userid's)
+Contributors: lukepettway
 Donate link: http://example.com/
 Tags: comments, spam
 Requires at least: 3.0.1
@@ -16,11 +16,8 @@ My goal with this plugin is to provide a simple way for anyone to see how the en
 own website. There will be a simple GUI that you can use to pull your content and display the JSON data, while also 
 giving you a small tutorial on how to modify the requests to get specific information. 
 
+
 == Installation ==
-
-This section describes how to install the plugin and get it working.
-
-e.g.
 
 1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
