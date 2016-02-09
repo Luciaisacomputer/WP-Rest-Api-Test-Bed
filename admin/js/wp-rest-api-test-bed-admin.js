@@ -33,8 +33,7 @@
 	 var $restRequestStringInput = $('#rest-request-string');
 
 	 $('.load-rest-content').on('click',function(){
- 		 //Thanks Rachel Baker!
-		//var apiEndpointData = $( 'link[rel="https://github.com/WP-API/WP-API"]' ).attr( 'href'), 
+ 		 //Thanks Rachel Baker for giving me a starting point!
 		var apiEndpointData = $(this).attr('href'), 
 		$el = $( '#js-data' ), 
 		tmpl = '<article id="post-<%= id %>"><h1><%= title %></h1><%= content %></article>';
