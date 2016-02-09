@@ -36,7 +36,8 @@
  		 //Thanks Rachel Baker for giving me a starting point!
 		var apiEndpointData = $(this).attr('href'), 
 
-		$el = $( '#js-data' ), 
+		$responseContainerFormated = $( '#js-data-formated' ),
+		$responseContainerJSON =  $( '#js-data-json' ),
 		tmpl = '<article id="post-<%= id %>"><h1><%= title %></h1><%= content %></article>';
 
 	 	$.get( '/wp-json/wp/v2/' + apiEndpointData , function( data ) {
@@ -47,11 +48,16 @@
 	 				content : data[ key ].content.rendered,
 	 				},
 	 				$template = $( _.template( tmpl , output ) );
-	 				$el.empty();
+	 				$responseContainerFormated.empty();
 	 				$restRequestStringInput.empty();
 	 				$restRequestStringInput.val('/wp-json/wp/v2/' + apiEndpointData);
-					$el.append( $template );
+					$responseContainerFormated.append( $template );
 	 		}
+	 		var dataString = JSON.stringify(data);
+
+	 		dataString = dataString.replace(/<\/?([a-z][a-z0-9]*)\b[^>]*>/gi, '');
+
+	 		$responseContainerJSON.append( dataString );
 	 	});
 
 	 	return false;
