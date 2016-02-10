@@ -49,10 +49,9 @@
 	 				content : data[ key ].content.rendered,
 	 				},
 	 				$template = $( _.template( tmpl , output ) );
- 				$responseContainerFormated.empty();
- 				$restRequestStringInput.empty();
- 				$restRequestStringInput.val( '/wp-json/wp/v2/' + apiEndpointData ) ;
-				$responseContainerFormated.append( $template );
+
+ 				$restRequestStringInput.empty().val( '/wp-json/wp/v2/' + apiEndpointData ) ;
+				$responseContainerFormated.empty().append( $template );
 				$viewRequestEndpoint.attr("href", '/wp-json/wp/v2/' + apiEndpointData )
 	 		}
 
