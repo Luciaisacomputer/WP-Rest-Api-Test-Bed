@@ -19,7 +19,7 @@
 <p>Use the controls below to choose request parameters and display the output.</p>
 <div class="rest-request-string-container">
 	<input id="rest-request-string">
-	<!-- <a id="viewRequestEndpoint" target="_blank" href="#">View Actual Request From Endpoint</a> -->
+	<a id="viewRequestEndpoint" target="_blank" href="#">View Response Page</a>
 </div>
 <a class="load-rest-content button" href="pages">Pages</a>
 
@@ -31,6 +31,6 @@
 
 <div id="js-data-formated"></div>
 
-<p>Below is the JSON output by the request (note that HTML in the rendered content is being stripped out by the plugin):</p>
+<p>Below is the JSON output by the request:</p>
 
 <div id="js-data-json"></div>

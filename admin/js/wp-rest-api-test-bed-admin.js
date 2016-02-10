@@ -35,9 +35,10 @@
 	 $restContentBtn.on( 'click', function(){
  		 //Thanks Rachel Baker for giving me a starting point!
 		var apiEndpointData = $(this).attr('href'), 
-
 		$responseContainerFormated = $( '#js-data-formated' ),
 		$responseContainerJSON =  $( '#js-data-json' ),
+		$viewRequestEndpoint = $('#viewRequestEndpoint'),
+
 		tmpl = '<article id="post-<%= id %>"><h1><%= title %></h1><%= content %></article>';
 
 	 	$.get( '/wp-json/wp/v2/' + apiEndpointData , function( data ) {
@@ -52,13 +53,10 @@
  				$restRequestStringInput.empty();
  				$restRequestStringInput.val( '/wp-json/wp/v2/' + apiEndpointData ) ;
 				$responseContainerFormated.append( $template );
-				//$viewRequestEndpoint.attr(href,)
+				$viewRequestEndpoint.attr("href", '/wp-json/wp/v2/' + apiEndpointData )
 	 		}
 
 	 		var dataString = JSON.stringify(data);
-
-	 		//strip out html from rendered content until I have a better solution
-	 		//dataString = dataString.replace(/<\/?([a-z][a-z0-9]*)\b[^>]*>/gi, '');
 
 	 		$responseContainerJSON.text( dataString );
 	 	});
