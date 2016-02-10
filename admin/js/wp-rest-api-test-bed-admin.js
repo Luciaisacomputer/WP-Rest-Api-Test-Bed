@@ -58,9 +58,9 @@
 	 		var dataString = JSON.stringify(data);
 
 	 		//strip out html from rendered content until I have a better solution
-	 		dataString = dataString.replace(/<\/?([a-z][a-z0-9]*)\b[^>]*>/gi, '');
+	 		//dataString = dataString.replace(/<\/?([a-z][a-z0-9]*)\b[^>]*>/gi, '');
 
-	 		$responseContainerJSON.append( dataString );
+	 		$responseContainerJSON.text( dataString );
 	 	});
 
 	 	return false;
