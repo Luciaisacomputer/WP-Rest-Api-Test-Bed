@@ -7,7 +7,7 @@
 		$restRequestStringInput = $( '#rest-request-string' ),
 		$responseContainerFormated = $( '#js-data-formated' ),
 		$responseContainerJSON =  $( '#js-data-json' ),
-		$viewRequestEndpoint = $('#viewRequestEndpoint'),
+		$viewRequestEndpoint = $('#viewRequestEndpoint');
 
 	$restContentBtn.on( 'click', function(){
 		 
