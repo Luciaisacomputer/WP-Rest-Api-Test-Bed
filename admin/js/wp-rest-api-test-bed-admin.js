@@ -14,7 +14,7 @@
 	$restContentBtn.on( 'click', function(){
 		 
 		var apiEndpointData = $(this).attr('href'), 
-		tmpl = '<article id="post-<%= id %>"><h1><%= title %></h1><%= content %></article>';
+			tmpl = '<article id="post-<%= id %>"><h1><%= title %></h1><%= content %></article>';
 
 		$.get( '/wp-json/wp/v2/' + apiEndpointData , function( data ) {
 
@@ -48,8 +48,11 @@
 	$mediaRestContentBtn.on( 'click', function(){
 
 		var apiEndpointData = $(this).attr('href'),
-
-		tmpl = '<article id="post-<%= id %>"><img src="<%= imgsrc %>"</article>';
+			tmpl = '<article id="post-<%= id %>">' +
+				   '<% if (mediatype == "image") { %>' +
+				   '<img src="<%= imgsrc %>"' +
+				   '<% } %>' +
+				   '</article>';
 
 		$.get( '/wp-json/wp/v2/' + apiEndpointData , function( data ) {
 
@@ -61,6 +64,7 @@
 
 				var output = {
 						id : data[ key ].id,
+						mediatype: data[ key ].media_type,
 						imgsrc: data[ key ].source_url,
 					},
 					$template = $( _.template( tmpl , output ) );
