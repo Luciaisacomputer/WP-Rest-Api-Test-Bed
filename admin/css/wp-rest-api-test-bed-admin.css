@@ -15,6 +15,11 @@
 	border-bottom: 1px solid #E0E0E0;
 }
 
+#js-data-json{
+	overflow-y: auto;
+    margin: 0;
+}
+
 /* Media Content */
 article.media{
     padding: 15px 0;

@@ -2,6 +2,8 @@
 	'use strict';
 	//Thanks Rachel Baker for giving me a starting point!
 
+
+	var dataString;
 	//Dom caching
 	var $restContentBtn = $( '.load-rest-content' ),
 		$mediaRestContentBtn = $( '#media-rest-content' ),
@@ -9,6 +11,11 @@
 		$responseContainerFormated = $( '#js-data-formated' ),
 		$responseContainerJSON =  $( '#js-data-json' ),
 		$viewRequestEndpoint = $('#viewRequestEndpoint');
+
+	function outputJsonData(data){
+		dataString = JSON.stringify(data, undefined, 4);
+		$responseContainerJSON.append( dataString );
+	}
 
 
 	$restContentBtn.on( 'click', function(){
@@ -34,9 +41,7 @@
 				$responseContainerFormated.append( $template );
 			}
 
-			var dataString = JSON.stringify(data, undefined, 4);
-
-			$responseContainerJSON.append( dataString );
+			outputJsonData(data);
 
 		});
 
@@ -76,10 +81,7 @@
 				$responseContainerFormated.append( $template );
 			}
 
-			var dataString = JSON.stringify(data);
-
-			$responseContainerJSON.text( dataString );
-
+			outputJsonData(data);
 
 		});
 
