@@ -27,6 +27,7 @@
 <a class="load-rest-content button" href="posts">Posts</a>
 
 <!-- <a class="load-rest-content button" href="comments">Comments</a> -->
+<a id="media-rest-content" class="button" href="media">Media</a>
 
 <!-- <a class="load-rest-content button" href="#">Custom Post Types</a> -->
 <p>Rendered content from request:</p>
