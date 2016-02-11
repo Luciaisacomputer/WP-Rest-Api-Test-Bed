@@ -18,18 +18,22 @@
 <?php if( is_plugin_active( 'rest-api/plugin.php' ) || class_exists( 'WP_REST_Controller' ) ): ?>
 
 <p>Use the controls below to choose request parameters and display the output.</p>
+
 <div class="rest-request-string-container">
 	<input id="rest-request-string" value="/wp-json/wp/v2/">
 	<a id="viewRequestEndpoint" target="_blank" href="/wp-json/wp/v2/">View Route Page</a>
 </div>
+
 <a class="load-rest-content button" href="pages">Pages</a>
 
 <a class="load-rest-content button" href="posts">Posts</a>
 
 <!-- <a class="load-rest-content button" href="comments">Comments</a> -->
+
 <a id="media-rest-content" class="button" href="media">Media</a>
 
 <!-- <a class="load-rest-content button" href="#">Custom Post Types</a> -->
+
 <p>Rendered content from request:</p>
 
 <div id="js-data-formated"></div>
@@ -37,7 +41,7 @@
 <p>Below is the JSON output by the request:</p>
 
 <div id="js-data-json-container">
-	<div id="js-data-json"></div>
+	<pre id="js-data-json"></pre>
 </div>
 
 <?php else: ?>	

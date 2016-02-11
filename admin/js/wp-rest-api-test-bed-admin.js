@@ -34,10 +34,9 @@
 				$responseContainerFormated.append( $template );
 			}
 
-			var dataString = JSON.stringify(data);
+			var dataString = JSON.stringify(data, undefined, 4);
 
-			$responseContainerJSON.text( dataString );
-
+			$responseContainerJSON.append( dataString );
 
 		});
 
