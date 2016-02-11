@@ -13,8 +13,9 @@
  */
 ?>
 
-<!-- This file should primarily consist of HTML with a little bit of PHP. -->
 <h2>WP Rest API Test Bed</h2>
+
+<?php if( is_plugin_active( 'rest-api/plugin.php' ) || class_exists( 'WP_REST_Controller' ) ): ?>
 
 <p>Use the controls below to choose request parameters and display the output.</p>
 <div class="rest-request-string-container">
@@ -34,3 +35,10 @@
 <p>Below is the JSON output by the request:</p>
 
 <div id="js-data-json"></div>
+
+<?php else: ?>	
+
+<p>Hmmm.... It looks like you don't have the REST API Installed or 
+it isn't active. Make sure you download the latest version <a href="https://wordpress.org/plugins/rest-api/" target="_blank">here</a>.</p>
+
+<?php endif; ?>
