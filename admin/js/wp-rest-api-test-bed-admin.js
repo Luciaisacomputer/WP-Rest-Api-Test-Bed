@@ -10,11 +10,19 @@
 		$restRequestStringInput = $( '#rest-request-string' ),
 		$responseContainerFormated = $( '#js-data-formated' ),
 		$responseContainerJSON =  $( '#js-data-json' ),
-		$viewRequestEndpoint = $('#viewRequestEndpoint');
+		$viewRequestEndpoint =  $( '#viewRequestEndpoint' ),
+		$jsExampleContainer = $('#js-example-container');
 
 	function outputJsonData(data){
 		dataString = JSON.stringify(data, undefined, 4);
 		$responseContainerJSON.append( dataString );
+	}
+
+	function outputJavaScriptExample(data){
+
+		var jsExampleString = "$.get( '/wp-json/wp/v2/"+data+", function( data ) { });";
+
+		$jsExampleContainer.text(jsExampleString);
 	}
 
 
@@ -42,6 +50,7 @@
 			}
 
 			outputJsonData(data);
+			outputJavaScriptExample(apiEndpointData);
 
 		});
 
@@ -82,7 +91,7 @@
 			}
 
 			outputJsonData(data);
-
+			outputJavaScriptExample(apiEndpointData);
 		});
 
 		return false;

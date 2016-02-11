@@ -38,11 +38,15 @@
 
 <div id="js-data-formated"></div>
 
-<p>Below is the JSON output by the request:</p>
+<p>JSON output by the request:</p>
 
 <div id="js-data-json-container">
 	<pre id="js-data-json"></pre>
 </div>
+
+<p>Here is a way to call that route and output the data (WIP):</p>
+
+<div id="js-example-container"></div>
 
 <?php else: ?>	
 
