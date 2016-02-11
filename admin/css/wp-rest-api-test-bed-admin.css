@@ -1,4 +1,4 @@
-
+/* Main Layout Styles */
 #js-data-formated, #js-data-json-container{
 	margin: 15px 0 0 0;
     background: #fff;
@@ -15,3 +15,16 @@
 	border-bottom: 1px solid #E0E0E0;
 }
 
+/* Media Content */
+article.media{
+    padding: 15px 0;
+}
+
+article.media img, article.media p{
+	vertical-align: middle;
+    display: inline-block;
+}
+
+article.media p{
+	margin-left: 10px;
+}

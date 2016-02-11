@@ -48,11 +48,15 @@
 	$mediaRestContentBtn.on( 'click', function(){
 
 		var apiEndpointData = $(this).attr('href'),
-			tmpl = '<article id="post-<%= id %>">' +
+			tmpl = '<article id="post-<%= id %>" class="media">' +
 				   '<% if (mediatype == "image") { %>' +
-				   '<img src="<%= imgsrc %>"' +
+				   '<img src="<%= imgsrc %>">' +
+				   '<% } else { %>' +
+				   '<img src="/wp-includes/images/media/document.png">' +
 				   '<% } %>' +
+				   '<p><%= filename %></p>' +
 				   '</article>';
+
 
 		$.get( '/wp-json/wp/v2/' + apiEndpointData , function( data ) {
 
@@ -66,6 +70,7 @@
 						id : data[ key ].id,
 						mediatype: data[ key ].media_type,
 						imgsrc: data[ key ].source_url,
+						filename: data[ key ].title.rendered
 					},
 					$template = $( _.template( tmpl , output ) );
 
