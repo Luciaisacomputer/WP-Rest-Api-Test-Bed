@@ -1,15 +1,17 @@
-/**
- * All of the CSS for your admin-specific functionality should be
- * included in this file.
- */
 
- #js-data-formated, #js-data-json{
- 	margin: 15px 0 0 0;
- 	background: #E0E0E0;
- 	padding: 5px;
- }
+#js-data-formated, #js-data-json-container{
+	margin: 15px 0 0 0;
+    background: #fff;
+    padding: 15px;
+    border: 5px solid #E0E0E0;
+}
 
- .rest-request-string-container{
- 	display: block;
- 	margin-bottom: 15px;
- }
+.rest-request-string-container{
+	display: block;
+	margin-bottom: 15px;
+}
+
+#js-data-formated article{
+	border-bottom: 1px solid #E0E0E0;
+}
+

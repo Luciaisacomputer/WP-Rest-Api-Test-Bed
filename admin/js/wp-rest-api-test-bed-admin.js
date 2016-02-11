@@ -9,7 +9,7 @@
 		$responseContainerJSON =  $( '#js-data-json' ),
 		$viewRequestEndpoint = $('#viewRequestEndpoint');
 
-	
+
 	$restContentBtn.on( 'click', function(){
 		 
 		var apiEndpointData = $(this).attr('href'), 
@@ -36,6 +36,8 @@
 			var dataString = JSON.stringify(data);
 
 			$responseContainerJSON.text( dataString );
+
+
 
 		});
 
