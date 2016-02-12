@@ -101,19 +101,19 @@ class Wp_Rest_Api_Test_Bed_Admin {
 	}
 
 	/**
-	 * Add an options page under the Settings submenu
+	 * Add an options page under the Tools submenu
 	 *
 	 * @since  1.0.0
 	 */
-	public function add_options_page() {
-		$this->plugin_screen_hook_suffix = add_options_page(
+
+	public function add_management_page(){
+		$this->plugin_screen_hook_suffix = add_management_page(
 			__( 'WP Rest API Test Bed Settings', 'wp-rest-api-test-bed' ),
 			__( 'WP Rest API Test Bed', 'wp-rest-api-test-bed' ),
 			'manage_options',
 			$this->plugin_name,
-			array( $this, 'display_options_page' )
+			array( $this, 'display_management_page' )
 		);
-	
 	}
 
 	/**
@@ -121,7 +121,7 @@ class Wp_Rest_Api_Test_Bed_Admin {
 	 *
 	 * @since  1.0.0
 	 */
-	public function display_options_page() {
+	public function display_management_page() {
 		include_once 'partials/wp-rest-api-test-bed-admin-display.php';
 	}
 
