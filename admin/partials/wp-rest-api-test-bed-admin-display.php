@@ -34,19 +34,29 @@
 
 <!-- <a class="load-rest-content button" href="#">Custom Post Types</a> -->
 
-<p>Rendered content from request:</p>
+<div id="wrapper">
+	<ul id="tabs"> 
+		<li><a href="#tab1">Rendered Request</a></li>
+		<li><a href="#tab2">JSON Output From Endpoint</a></li>
+		<li><a href="#tab3">Javascript Code</a></li>
+	</ul>
+	<div class="container" id="tab1">		
+		<p>Rendered content from request:</p>
 
-<div id="js-data-formated"></div>
+		<div id="js-data-formated"></div>						
+	</div>
+	<div class="container" id="tab2" >
+		<p>JSON output by the request:</p>
 
-<p>JSON output by the request:</p>
-
-<div id="js-data-json-container">
-	<pre id="js-data-json"></pre>
+		<div id="js-data-json-container">
+			<pre id="js-data-json"></pre>
+		</div>
+	</div>
+	<div class="container" id="tab3">
+		<p>Here is a way to call that route and output the data (WIP):</p>
+		<div id="js-example-container"></div>
+	</div>
 </div>
-
-<p>Here is a way to call that route and output the data (WIP):</p>
-
-<div id="js-example-container"></div>
 
 <?php else: ?>	
 
@@ -54,3 +64,10 @@
 it isn't active. Make sure you download the latest version of it <a href="https://wordpress.org/plugins/rest-api/" target="_blank">here</a>.</p>
 
 <?php endif; ?>
+
+
+
+
+
+
+

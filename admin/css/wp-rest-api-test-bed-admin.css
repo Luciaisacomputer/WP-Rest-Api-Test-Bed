@@ -6,7 +6,6 @@
  	background: #fff;
   padding: 30px 15px;
   border: 1px solid #E0E0E0;
-  width: 75%;
 }
 
 .rest-request-string-container{
@@ -35,4 +34,27 @@ article.media img, article.media p{
 
 article.media p{
 	margin-left: 10px;
+}
+
+/*Tab Controller */
+
+#wrapper{
+  width: 75%;
+}
+
+#tabs{
+  text-align: right;
+  margin-bottom: 0;
+  margin: 0;
+}
+
+#tabs li{
+  display: inline-block;
+  margin: 0;
+}
+
+#tabs li a{
+  text-decoration: none;
+  background: #fff;
+  padding: 5px;
 }
