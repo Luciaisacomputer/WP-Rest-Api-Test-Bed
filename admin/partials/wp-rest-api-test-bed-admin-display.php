@@ -21,7 +21,7 @@
 
 <div class="rest-request-string-container">
 	<input id="rest-request-string" value="/wp-json/wp/v2/">
-	<a class="button" id="viewRequestEndpoint" target="_blank" href="/wp-json/wp/v2/">View Route Page</a>
+	<a class="button" id="viewRequestEndpoint" target="_blank" href="/wp-json/wp/v2/">View Route</a>
 </div>
 
 <a class="load-rest-content button" href="pages">Pages</a>
@@ -41,19 +41,14 @@
 		<li><a href="#tab3">Code Examples</a></li>
 	</ul>
 	<div class="container" id="tab1">		
-		<p>Rendered content from request:</p>
-
 		<div id="js-data-formated"></div>						
 	</div>
 	<div class="container" id="tab2" >
-		<p>JSON output by the request:</p>
-
 		<div id="js-data-json-container">
 			<pre id="js-data-json"></pre>
 		</div>
 	</div>
 	<div class="container" id="tab3">
-		<p>Here is a way to call that route and output the data (WIP):</p>
 		<div id="js-example-container"></div>
 	</div>
 </div>

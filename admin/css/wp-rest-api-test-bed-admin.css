@@ -2,7 +2,6 @@
 /* Main Layout Styles */
 
 #js-data-formated, #js-data-json-container, #js-example-container {
-  margin: 15px 0 0 0;
  	background: #fff;
   padding: 30px 15px;
   border: 1px solid #E0E0E0;
@@ -11,10 +10,16 @@
 .rest-request-string-container{
 	display: block;
 	margin-bottom: 15px;
+  width: 75%;
 }
 
 #rest-request-string{
-  width: 67%;
+  width: 91%;
+}
+
+#viewRequestEndpoint{
+  width: 8%;
+  text-align: center;
 }
 
 #js-data-formated article{
@@ -65,4 +70,7 @@ article.media img{
   text-decoration: none;
   background: #fff;
   padding: 5px;
+  padding-bottom: 1px;
+  border: 1px solid #E0E0E0;
+  border-bottom: none;
 }

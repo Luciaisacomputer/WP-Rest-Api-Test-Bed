@@ -107,7 +107,7 @@
 			$('#tabs li a').addClass('inactive');		
 			$(this).removeClass('inactive');
 			$('.container').hide();
-			$(t).fadeIn('slow');	
+			$(t).show();	
 		}			
 		return false;
 	}) //end click
