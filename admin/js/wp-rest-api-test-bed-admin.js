@@ -14,6 +14,7 @@
 		$jsExampleContainer = $('#js-example-container');
 
 	function outputJsonData(data){
+		$responseContainerJSON.empty();
 		dataString = JSON.stringify(data, undefined, 4);
 		$responseContainerJSON.append( dataString );
 	}
