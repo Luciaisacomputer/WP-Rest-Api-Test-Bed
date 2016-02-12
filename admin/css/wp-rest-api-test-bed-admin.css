@@ -1,9 +1,12 @@
+
 /* Main Layout Styles */
-#js-data-formated, #js-data-json-container, #js-example-container{
-	margin: 15px 0 0 0;
-    background: #fff;
-    padding: 15px;
-    border: 5px solid #E0E0E0;
+
+#js-data-formated, #js-data-json-container, #js-example-container {
+  margin: 15px 0 0 0;
+ 	background: #fff;
+  padding: 30px 15px;
+  border: 1px solid #E0E0E0;
+  width: 75%;
 }
 
 .rest-request-string-container{
