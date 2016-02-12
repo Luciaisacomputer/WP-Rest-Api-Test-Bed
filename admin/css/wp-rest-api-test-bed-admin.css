@@ -13,6 +13,10 @@
 	margin-bottom: 15px;
 }
 
+#rest-request-string{
+  width: 67%;
+}
+
 #js-data-formated article{
 	border-bottom: 1px solid #E0E0E0;
 }
@@ -34,6 +38,10 @@ article.media img, article.media p{
 
 article.media p{
 	margin-left: 10px;
+}
+
+article.media img{
+  max-width: 100%;
 }
 
 /*Tab Controller */

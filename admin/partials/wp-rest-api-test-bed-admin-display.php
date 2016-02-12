@@ -21,7 +21,7 @@
 
 <div class="rest-request-string-container">
 	<input id="rest-request-string" value="/wp-json/wp/v2/">
-	<a id="viewRequestEndpoint" target="_blank" href="/wp-json/wp/v2/">View Route Page</a>
+	<a class="button" id="viewRequestEndpoint" target="_blank" href="/wp-json/wp/v2/">View Route Page</a>
 </div>
 
 <a class="load-rest-content button" href="pages">Pages</a>
@@ -38,7 +38,7 @@
 	<ul id="tabs"> 
 		<li><a href="#tab1">Rendered Request</a></li>
 		<li><a href="#tab2">JSON Output From Endpoint</a></li>
-		<li><a href="#tab3">Javascript Code</a></li>
+		<li><a href="#tab3">Code Examples</a></li>
 	</ul>
 	<div class="container" id="tab1">		
 		<p>Rendered content from request:</p>
