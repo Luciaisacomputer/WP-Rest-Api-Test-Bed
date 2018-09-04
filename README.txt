@@ -33,8 +33,4 @@ This is actually my first plugin so any tips on how to improve what I am working
 5. Controls for Adding Specifics for Requests (such as post ID)
 
 
-== How You Can Help ==
-
-1. Tell me what confuses you about the Rest API 
-2. Suggest a feature or enhancement
 
